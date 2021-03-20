@@ -1,11 +1,10 @@
-# README
+# Virtual Track Lab
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+VTL Prototype built using Ruby
 
-Things you may want to cover:
+Tech Specs:
 
-* Ruby version
+* Ruby version 3.0.0
 
 * System dependencies
 
