@@ -5,7 +5,7 @@
   <div class="row m-3">
     <h1><%= @track.title %></h1>
     <hr />
-    <p><%= @track.description %></p>
+    <p><%= @track.description.html_safe %></p>
     <hr />
     <img src="<%= @track.thumbnail %>" class="img-fluid img-thumbnail w-100 mb-3 shadow-sm rounded-0" alt="Scan1">
     <a href="<%= @track.scan_url %>" class="btn btn-primary" role="button">View 3D Scan</a>
