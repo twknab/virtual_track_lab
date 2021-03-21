@@ -528,3 +528,1231 @@ Processing by TracksController#index as HTML
 Completed 200 OK in 180ms (Views: 161.1ms | ActiveRecord: 1.5ms | Allocations: 22853)
 
 
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210321044907)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "level" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210321044907"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:01:54 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 73.9ms | Allocations: 4915)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/timotree/Library/Mobile Documents/com~apple~CloudDocs/Development/projects/ruby/virtual_track_lab/public/packs
+[Webpacker] Hash: 52357dfcd4ae8adeac8f
+Version: webpack 4.46.0
+Time: 4387ms
+Built at: 03/20/2021 10:02:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8d80c1459189d7646316.js    125 KiB  application  [emitted] [immutable]  application
+js/application-8d80c1459189d7646316.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8d80c1459189d7646316.js js/application-8d80c1459189d7646316.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 563 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 22694.1ms | Allocations: 95295)
+Completed 200 OK in 22719ms (Views: 22699.7ms | ActiveRecord: 2.2ms | Allocations: 98915)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:02:17 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 7378)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.3ms | Allocations: 7844)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:03:13 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 963)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 7803)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.1ms | Allocations: 9021)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:03:34 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 967)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 7809)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.1ms | Allocations: 9040)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:04:40 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 7805)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.2ms | Allocations: 9031)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:06:19 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 941)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7783)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.1ms | Allocations: 9012)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:06:58 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 7773)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.1ms | Allocations: 8985)
+
+
+Started GET "/tracks/1" for 127.0.0.1 at 2021-03-20 22:07:07 -0700
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrack Load (1.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/show.html.erb within layouts/application
+  Rendered tracks/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6715)
+Completed 200 OK in 53ms (Views: 23.0ms | ActiveRecord: 1.6ms | Allocations: 11146)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:07:38 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:3
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 932)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 7771)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms | Allocations: 8982)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:08:44 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 955)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 7794)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.5ms | Allocations: 9006)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:09:31 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 7791)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.1ms | Allocations: 9004)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:09:59 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 7791)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.1ms | Allocations: 9009)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:12:43 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 949)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 7788)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.2ms | Allocations: 9001)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:13:23 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 7790)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 9007)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:04 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (1.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.0ms | Allocations: 7800)
+Completed 200 OK in 132ms (Views: 124.2ms | ActiveRecord: 1.1ms | Allocations: 9012)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:42 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 7800)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.2ms | Allocations: 9012)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:45 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 7340)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.1ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:46 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 7340)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms | Allocations: 7793)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:47 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 7340)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 7793)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:48 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 7341)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms | Allocations: 7795)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:49 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7340)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 7793)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:15:49 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7340)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:16:15 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 7809)
+Completed 200 OK in 50ms (Views: 44.2ms | ActiveRecord: 0.2ms | Allocations: 9025)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:16:52 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 7800)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.2ms | Allocations: 9012)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:16:57 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 7340)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:17:00 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 7340)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.1ms | Allocations: 7793)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:18:37 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (2.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 7800)
+Completed 200 OK in 81ms (Views: 73.8ms | ActiveRecord: 2.2ms | Allocations: 9015)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:18:49 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 7345)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.1ms | Allocations: 7800)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:19:47 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 7809)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.1ms | Allocations: 9025)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:20:16 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7800)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.2ms | Allocations: 9013)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:22:56 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7801)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.2ms | Allocations: 9014)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:23:06 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 7802)
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 0.2ms | Allocations: 9019)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:23:26 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 7340)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.3ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:24:43 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7810)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.3ms | Allocations: 9021)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:25:28 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 7810)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.2ms | Allocations: 9022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:25:37 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 7351)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.5ms | Allocations: 7806)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:26:41 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 975)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 7816)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.1ms | Allocations: 9032)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:26:50 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 969)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7809)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.2ms | Allocations: 9022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:27:50 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 973)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 7813)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.2ms | Allocations: 9026)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:31:22 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.1ms | Allocations: 7832)
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 0.4ms | Allocations: 9049)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:31:25 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 7340)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:32:10 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 7800)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.4ms | Allocations: 9011)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:32:25 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 7340)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.2ms | Allocations: 7794)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:32:49 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 7814)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.2ms | Allocations: 9031)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:33:38 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 7802)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.1ms | Allocations: 9019)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:35:14 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (3.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.8ms | Allocations: 7805)
+Completed 200 OK in 99ms (Views: 88.5ms | ActiveRecord: 3.2ms | Allocations: 9018)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:35:51 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 7810)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.3ms | Allocations: 9023)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:37:22 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 7805)
+Completed 200 OK in 44ms (Views: 36.8ms | ActiveRecord: 0.4ms | Allocations: 9022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:37:43 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 7803)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms | Allocations: 9015)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:38:00 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 7803)
+Completed 200 OK in 72ms (Views: 64.5ms | ActiveRecord: 0.6ms | Allocations: 9015)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:38:43 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 7804)
+Completed 200 OK in 63ms (Views: 57.3ms | ActiveRecord: 0.4ms | Allocations: 9017)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:38:50 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 7813)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.1ms | Allocations: 9031)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:39:05 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 7805)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.2ms | Allocations: 9022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:39:16 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 7803)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.5ms | Allocations: 9016)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:39:55 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 7803)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.2ms | Allocations: 9016)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:40:04 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 7805)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.1ms | Allocations: 9022)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:40:28 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 7803)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.5ms | Allocations: 9015)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:45:24 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.8ms | Allocations: 7892)
+Completed 200 OK in 111ms (Views: 99.2ms | ActiveRecord: 0.5ms | Allocations: 9104)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:46:03 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1014)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 7905)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.7ms | Allocations: 9123)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:46:39 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  Rendered tracks/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 7057)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 8275)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:46:52 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.5ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 7897)
+Completed 200 OK in 79ms (Views: 72.0ms | ActiveRecord: 0.5ms | Allocations: 9114)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:47:29 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 7896)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.2ms | Allocations: 9109)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:47:51 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.8ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.1ms | Allocations: 7896)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.8ms | Allocations: 9109)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:48:00 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 7341)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.7ms | Allocations: 7795)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:48:25 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.6ms | Allocations: 7923)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 0.6ms | Allocations: 9139)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:49:09 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1038)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 7922)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.6ms | Allocations: 9134)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:49:39 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 980)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 7876)
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 0.7ms | Allocations: 9089)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:49:54 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 975)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 7866)
+Completed 200 OK in 94ms (Views: 90.3ms | ActiveRecord: 0.4ms | Allocations: 9084)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddThumbnailToTracks (20210321055305)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "tracks" ADD "thumbnail" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210321055305"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-03-20 22:55:51 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 24.1ms | Allocations: 3772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 10637)
+Completed 200 OK in 61ms (Views: 54.8ms | ActiveRecord: 0.7ms | Allocations: 12297)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrack Load (0.6ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Destroy (2.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.5ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Western Washington, USA"], ["description", "Egestas pretium aenean pharetra magna ac placerat vestibulum. Sagittis vitae et leo duis. Duis at tellus at urna condimentum. Quisque sagittis purus sit amet volutpat consequat. Ut venenatis tellus in metus vulputate eu."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:03:12.164448"], ["updated_at", "2021-03-21 06:03:12.164448"], ["thumbnail", "https://loremflickr.com/300/300"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Northern Oregon, USA"], ["description", "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:03:12.169899"], ["updated_at", "2021-03-21 06:03:12.169899"], ["thumbnail", "https://loremflickr.com/300/300"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Northwestern Idaho, USA"], ["description", "Dui vivamus arcu felis bibendum ut tristique et egestas. Tellus molestie nunc non blandit. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Scelerisque eu ultrices vitae auctor eu augue ut. Vitae tortor condimentum lacinia quis vel eros donec ac. Volutpat maecenas volutpat blandit aliquam etiam erat."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:03:12.174191"], ["updated_at", "2021-03-21 06:03:12.174191"], ["thumbnail", "https://loremflickr.com/300/300"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:03:15 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/tracks/index.html.erb:6
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 8203)
+Completed 200 OK in 105ms (Views: 101.2ms | ActiveRecord: 1.6ms | Allocations: 8655)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:04:11 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 8013)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.3ms | Allocations: 9230)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:04:22 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 8001)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.3ms | Allocations: 9213)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:04:46 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 8001)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.3ms | Allocations: 9213)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:04:52 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 8003)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.1ms | Allocations: 9217)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:05:00 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 8002)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.2ms | Allocations: 9218)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:06:53 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 8128)
+Completed 200 OK in 50ms (Views: 39.7ms | ActiveRecord: 0.3ms | Allocations: 9341)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:06:57 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7509)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 7964)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:06:59 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 905)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7516)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms | Allocations: 7970)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Destroy (0.5ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Western Washington, USA"], ["description", "Egestas pretium aenean pharetra magna ac placerat vestibulum. Sagittis vitae et leo duis. Duis at tellus at urna condimentum. Quisque sagittis purus sit amet volutpat consequat. Ut venenatis tellus in metus vulputate eu."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:08:11.841983"], ["updated_at", "2021-03-21 06:08:11.841983"], ["thumbnail", "https://www.fillmurray.com/300/300"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Northern Oregon, USA"], ["description", "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:08:11.847154"], ["updated_at", "2021-03-21 06:08:11.847154"], ["thumbnail", "https://loremflickr.com/300/300"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "description", "scan_url", "created_at", "updated_at", "thumbnail") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Northwestern Idaho, USA"], ["description", "Dui vivamus arcu felis bibendum ut tristique et egestas. Tellus molestie nunc non blandit. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Scelerisque eu ultrices vitae auctor eu augue ut. Vitae tortor condimentum lacinia quis vel eros donec ac. Volutpat maecenas volutpat blandit aliquam etiam erat."], ["scan_url", "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9"], ["created_at", "2021-03-21 06:08:11.851273"], ["updated_at", "2021-03-21 06:08:11.851273"], ["thumbnail", "https://placekitten.com/300/300"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:09:20 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 8207)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 0.3ms | Allocations: 9424)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:09:38 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.8ms | Allocations: 7584)
+Completed 200 OK in 96ms (Views: 92.3ms | ActiveRecord: 0.3ms | Allocations: 8038)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:09:42 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7585)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 8038)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:09:44 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 7585)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms | Allocations: 8039)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:09:47 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:6
+  Rendered tracks/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 7584)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.2ms | Allocations: 8037)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:10:29 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:5
+  Rendered tracks/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 7985)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.4ms | Allocations: 9202)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:10:35 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 7981)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.7ms | Allocations: 9197)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:11:55 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 7974)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.3ms | Allocations: 9186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:12:58 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 7980)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.3ms | Allocations: 9195)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:06 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (1.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 7975)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.3ms | Allocations: 9190)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:19 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.5ms | Allocations: 7976)
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 0.2ms | Allocations: 9188)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:30 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.8ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 7976)
+Completed 200 OK in 92ms (Views: 84.2ms | ActiveRecord: 0.8ms | Allocations: 9189)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:35 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.4ms | Allocations: 7974)
+Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 0.3ms | Allocations: 9186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:40 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 7986)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.2ms | Allocations: 9204)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:13:52 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 7476)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.1ms | Allocations: 7931)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:14:22 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 7974)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.3ms | Allocations: 9188)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:14:39 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 7980)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.2ms | Allocations: 9195)
+
+

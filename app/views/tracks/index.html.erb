@@ -1,17 +1,43 @@
 <h1>VTL - Virtual Track Lab</h1>
-<fieldset><legend><h1>Tracks</h1></legend>
-    <% @tracks.each do |track| %>
-  <h4><%= track.title %></h4>
-  <ul>
-      <li>
-        <%= track.description %>
-      </li>
-      <li>
-        <a href="<%= track.scan_url %>">Scan URL</a>
-      </li>
-  </ul>
+<div class="container">
+  <div class="row m-3">
+  <% @tracks.each do |track| %>
+    <div class="col-lg-4 col-md-6 grid-item mb-4"><img src="<%= track.thumbnail %>"
+        class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" alt="Scan1">
+      <h2 class="h4"><%= link_to track.title, track %></h2>
+      <p class="small text-muted font-italic"><%= track.description %></p>
+        <p><a href="<%= track.scan_url %>" class="btn btn-primary" role="button">View 3D Scan</a></p>
+    </div>
     <% end %>
-</fieldset>
-<fieldset><legend><h1>Add Track</h1></legend>
-<p>TODO</p>
-</fieldset>
+  </div>
+  <h2>About</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Ut porttitor leo a diam sollicitudin tempor. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus
+        iaculis. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Tristique senectus et netus et. In
+        metus vulputate eu scelerisque felis imperdiet. Mauris sit amet massa vitae tortor condimentum lacinia quis vel.
+        Orci ac auctor augue mauris augue.</p>
+    </div>
+    <div class="col-sm-6">
+      <p>Massa vitae tortor condimentum lacinia. Ultricies tristique nulla aliquet enim tortor at auctor. Diam sit amet
+        nisl suscipit adipiscing bibendum est. Odio aenean sed adipiscing diam donec adipiscing. Vel eros donec ac odio
+        tempor orci dapibus ultrices. Nisi lacus sed viverra tellus in hac habitasse platea dictumst.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <p>Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Orci porta non pulvinar neque. Commodo
+        elit at imperdiet dui. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Id nibh tortor id aliquet
+        lectus proin. Viverra nibh cras pulvinar mattis nunc. Scelerisque in dictum non consectetur a. Ac turpis egestas
+        sed tempus urna. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Nec ullamcorper sit
+        amet risus nullam eget. Bibendum ut tristique et egestas quis. Non consectetur a erat nam. Tristique senectus et
+        netus et malesuada fames.</p>
+
+      <p>Risus nullam eget felis eget nunc. Volutpat lacus laoreet non curabitur gravida. Ultrices tincidunt arcu non
+        sodales. Elit duis tristique sollicitudin nibh sit. Lectus arcu bibendum at varius vel pharetra vel turpis nunc.
+        At elementum eu facilisis sed odio. Viverra tellus in hac habitasse platea dictumst vestibulum. Elementum tempus
+        egestas sed sed risus pretium quam. Lacus vel facilisis volutpat est velit egestas dui id. Rutrum tellus
+        pellentesque eu tincidunt.</p>
+    </div>
+  </div>
+</div>
