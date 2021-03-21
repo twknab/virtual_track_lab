@@ -16,6 +16,54 @@ Track.create!([{
 },
 {
   title: "Northern Oregon, USA",
+  description: "<p>Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper.</p><p>Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis</p>",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Western Iowa, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Northern WA, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Western Iowa, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Northern WA, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Western Iowa, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Northern WA, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Western Iowa, USA",
+  description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
+  scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
+  thumbnail: "https://loremflickr.com/300/300"
+},
+{
+  title: "Northern WA, USA",
   description: "Eu facilisis sed odio morbi. Feugiat sed lectus vestibulum mattis ullamcorper. Eros donec ac odio tempor. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vulputate enim nulla aliquet porttitor lacus. Libero volutpat sed cras ornare arcu. Est ullamcorper eget nulla facilisi etiam dignissim diam quis.",
   scan_url: "https://sketchfab.com/3d-models/spry-mints-560f2f8897594561b075dcd66577bab9",
   thumbnail: "https://loremflickr.com/300/300"

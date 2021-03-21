@@ -1,12 +1,21 @@
 <h1>VTL - Virtual Track Lab</h1>
 <div class="container">
   <div class="row m-3">
-  <% @tracks.each do |track| %>
+    <% @tracks.each do |track| %>
     <div class="col-lg-4 col-md-6 grid-item mb-4"><img src="<%= track.thumbnail %>"
         class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" alt="Scan1">
       <h2 class="h4"><%= link_to track.title, track %></h2>
-      <p class="small text-muted font-italic"><%= track.description %></p>
-        <p><a href="<%= track.scan_url %>" class="btn btn-primary" role="button">View 3D Scan</a></p>
+      <% if track.description.length > 150 %>
+      <p class="small text-muted font-italic" id="track_desc_<%= track.id %>"
+        data-full-description='<%= track.description %>'>
+        <%= truncate(strip_tags(track.description), :length => 150, :omission => '...')%></p>
+      <button type="button" class="btn btn-primary btn-sm read_more_<%= track.id %>" data-read-more-id="<%= track.id %>"
+        data-is-truncated="true" role="button">Read More</a>
+      <% else %>
+      <p class="small text-muted font-italic">
+        <%= track.description %>
+      </p>
+      <% end %>
     </div>
     <% end %>
   </div>
@@ -41,3 +50,51 @@
     </div>
   </div>
 </div>
+<script>
+  function toggleReadMore(button, trackId, isTruncated) {
+    // Get description element and full and truncated text
+    const descElement = document.getElementById('track_desc_' + trackId),
+    fullDesc = descElement.dataset.fullDescription,
+    truncatedDesc = fullDesc.substring(0, 147) + "...";
+    
+    // Map string to bool
+    isTruncated = isTruncated === 'true' ? true : false;
+
+    // Create upated values depending on state
+    const description = isTruncated ? fullDesc : truncatedDesc,
+    buttonText = isTruncated ? "Read Less" : "Read More",
+    classToAdd = isTruncated ? 'btn-secondary' : 'btn-primary',
+    classToRemove = isTruncated ? 'btn-primary' : 'btn-secondary';
+    
+    // Update description and button text
+    descElement.innerHTML = description;
+    button.innerHTML = buttonText;
+    button.classList.add(classToAdd);
+    button.classList.remove(classToRemove);
+    button.dataset.isTruncated = !isTruncated;
+  }
+
+  function getReadMoreButtons() {
+    const readMoreButtons = document.querySelectorAll(
+      "button[data-read-more-id]"
+    );
+    readMoreButtons.forEach((element) => {
+      element.addEventListener("click", (event) => {
+        event.preventDefault();
+        const {
+          readMoreId,
+          isTruncated
+        } = element.dataset;
+        toggleReadMore(element, readMoreId, isTruncated);
+      });
+    });
+  }
+  
+  window.addEventListener("DOMContentLoaded", () => {
+    getReadMoreButtons();
+  });
+  // Gather dom elements again if back button is hit etc
+  if (document.readyState === 'complete') {
+    getReadMoreButtons();
+  }
+</script>
