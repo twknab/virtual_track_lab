@@ -1756,3 +1756,15 @@ Processing by TracksController#index as HTML
 Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.2ms | Allocations: 9195)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-20 23:15:15 -0700
+Processing by TracksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracks/index.html.erb within layouts/application
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/views/tracks/index.html.erb:4
+  Rendered tracks/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 7929)
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 0.2ms | Allocations: 9144)
+
+

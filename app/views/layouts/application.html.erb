@@ -13,32 +13,6 @@
 
 <body>
   <%= yield %>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
-  </script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script>
-    $(function () {
-
-      // Initate masonry grid
-      var $grid = $('.gallery-wrapper').masonry({
-        temSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true,
-      });
-
-      // Initate imagesLoaded
-      $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
-      });
-
-    });
-  </script>
-  <style>
-  body {
-  min-height: 100vh; 
-}
-  </style>
 </body>
 
 </html>
